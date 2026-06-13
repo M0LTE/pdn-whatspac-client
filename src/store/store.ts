@@ -62,6 +62,22 @@ export interface PostRow {
   rfc: Callsign | null;
 }
 
+export interface HamRow {
+  c: Callsign;
+  n: string | null;
+  ts: number;
+  a: string | null;
+  ats: number;
+}
+
+export interface ConversationRow {
+  sid: string;
+  peer: Callsign;
+  lastText: string;
+  lastTs: number;
+  count: number;
+}
+
 /** `sid` is the DM conversation key: the two callsigns sorted and joined. */
 export function conversationId(a: Callsign, b: Callsign): string {
   return [a, b].sort().join("|");
@@ -308,6 +324,37 @@ export class Store {
   /** The newest avatar timestamp held, for the WhatsPic enquiry's `lats` cursor. */
   lastAvatarTs(): number {
     return ((this.db.prepare("SELECT max(ats) AS v FROM hams").get() as { v: number | null }).v ?? 0) as number;
+  }
+
+  /** A ham (name + avatar) by callsign, for display in the heads. */
+  getHam(c: Callsign): HamRow | undefined {
+    return this.db.prepare("SELECT c, n, ts, a, ats FROM hams WHERE c = ?").get(c) as
+      | HamRow
+      | undefined;
+  }
+
+  /**
+   * Distinct DM conversations from the point of view of `myCallsign`: the peer
+   * callsign, the latest message preview, and a count — for the heads' DM list.
+   */
+  listConversations(myCallsign: Callsign): ConversationRow[] {
+    const rows = this.db
+      .prepare(
+        `SELECT sid,
+                count(*)                AS n,
+                max(ts)                 AS lastTs
+           FROM messages
+          GROUP BY sid
+          ORDER BY lastTs DESC`,
+      )
+      .all() as { sid: string; n: number; lastTs: number }[];
+    return rows.map((r) => {
+      const last = this.db
+        .prepare("SELECT fc, tc, m FROM messages WHERE sid = ? ORDER BY ts DESC LIMIT 1")
+        .get(r.sid) as { fc: string; tc: string; m: string } | undefined;
+      const peer = last ? (last.fc === myCallsign ? last.tc : last.fc) : r.sid;
+      return { sid: r.sid, peer, lastText: last?.m ?? "", lastTs: r.lastTs, count: r.n };
+    });
   }
 
   // ---- connect-object delta cursors (mirrors the SPA, docs §5) ----
