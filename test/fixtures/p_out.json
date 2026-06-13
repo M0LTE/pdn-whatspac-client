@@ -1,0 +1,19 @@
+{
+  "name": "p_out",
+  "t": "p",
+  "direction": "client->WPS",
+  "note": "Pairing request.",
+  "decoded": {
+    "t": "p",
+    "fc": "M0LTE"
+  },
+  "wire": {
+    "json": "{\"t\":\"p\",\"fc\":\"M0LTE\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqUNJRSksGMnwNfEJclWoBQYwFuA==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"p\",\"fc\":\"M0LTE\"}\r"
+  }
+}

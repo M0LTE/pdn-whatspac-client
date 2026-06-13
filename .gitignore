@@ -1,31 +1,24 @@
-# .NET build output
-bin/
-obj/
-[Dd]ebug/
-[Rr]elease/
-*.user
-artifacts/
-publish/
+# Dependencies
+node_modules/
 
-# Test results
-TestResults/
-*.trx
-coverage*.xml
-*.coverage
+# Build output
+dist/
+*.tsbuildinfo
 
-# Local agent state (SQLite store, captures)
+# Local agent state (SQLite store, runtime data)
 *.db
 *.db-shm
 *.db-wal
 /run/
 /state/
+*.local.json
 
-# IDE
-.vs/
-.idea/
-*.swp
+# Test / coverage
+coverage/
+
+# Logs & misc
+*.log
 .DS_Store
-
-# Node (web UI head, if any tooling lands)
-node_modules/
-dist/
+.idea/
+.vscode/
+*.swp

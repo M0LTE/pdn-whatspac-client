@@ -1,0 +1,18 @@
+{
+  "name": "k",
+  "t": "k",
+  "direction": "client->WPS",
+  "note": "Keepalive. NOTE: this object is SMALL enough that ma() sends it UNCOMPRESSED (raw JSON+CR), per the fallback.",
+  "decoded": {
+    "t": "k"
+  },
+  "wire": {
+    "json": "{\"t\":\"k\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKVqoFAA0QApo=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"k\"}\r"
+  }
+}

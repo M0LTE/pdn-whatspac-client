@@ -1,0 +1,35 @@
+{
+  "name": "cpb_in",
+  "t": "cpb",
+  "direction": "WPS->client",
+  "note": "Channel-post backfill BATCH. m.pc=downloaded, m.pt=total.",
+  "decoded": {
+    "t": "cpb",
+    "cid": "abc123",
+    "m": {
+      "pc": 2,
+      "pt": 2
+    },
+    "p": [
+      {
+        "fc": "M0AHN",
+        "ts": 1700000600000,
+        "p": "a"
+      },
+      {
+        "fc": "M0LTE",
+        "ts": 1700000610000,
+        "p": "b"
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"cpb\",\"cid\":\"abc123\",\"m\":{\"pc\":2,\"pt\":2},\"p\":[{\"fc\":\"M0AHN\",\"ts\":1700000600000,\"p\":\"a\"},{\"fc\":\"M0LTE\",\"ts\":1700000610000,\"p\":\"b\"}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLkhS0lFKzkwBshOTkg2NjIHcXCWraqWCZCUrIx2lAqAqo1ogrWQVXa2UBhRU8jVw9PADKispVrIyNDcAATMwCVallKhUqwNX6RPiiqbSEKEySak2thYATNQh6A==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cpb\",\"cid\":\"abc123\",\"m\":{\"pc\":2,\"pt\":2},\"p\":[{\"fc\":\"M0AHN\",\"ts\":1700000600000,\"p\":\"a\"},{\"fc\":\"M0LTE\",\"ts\":1700000610000,\"p\":\"b\"}]}\r"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "mem_out",
+  "t": "mem",
+  "direction": "client->WPS",
+  "note": "DM emoji. a=1 add/0 remove; e=unified codepoint.",
+  "decoded": {
+    "t": "mem",
+    "a": 1,
+    "_id": "1700000000123-M0LTE",
+    "e": "1f44d",
+    "ets": 1700000300000
+  },
+  "wire": {
+    "json": "{\"t\":\"mem\",\"a\":1,\"_id\":\"1700000000123-M0LTE\",\"e\":\"1f44d\",\"ets\":1700000300000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKTc1V0lFKVLIy1FGKz0wBihiaG0CBoZGxrq+BT4grUEUqSCbNxCQFxC4pBqqHKDMGk7UAy+AR+A==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"mem\",\"a\":1,\"_id\":\"1700000000123-M0LTE\",\"e\":\"1f44d\",\"ets\":1700000300000}\r"
+  }
+}

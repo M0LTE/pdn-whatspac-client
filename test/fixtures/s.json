@@ -1,0 +1,23 @@
+{
+  "name": "s",
+  "t": "s",
+  "direction": "WPS->client",
+  "note": "Stats blob (inner shape illustrative; confirm on-air).",
+  "decoded": {
+    "t": "s",
+    "s": {
+      "users": 42,
+      "posts": 1234,
+      "messages": 567
+    }
+  },
+  "wire": {
+    "json": "{\"t\":\"s\",\"s\":{\"users\":42,\"posts\":1234,\"messages\":567}}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqVtIBYqtqpdLi1CIgw8RIR6kgv7gEyDQ0MjbRUcpNLS5OTE8F8k3NzGtrAazfEB4=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"s\",\"s\":{\"users\":42,\"posts\":1234,\"messages\":567}}\r"
+  }
+}

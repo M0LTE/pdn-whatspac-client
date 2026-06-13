@@ -1,0 +1,21 @@
+{
+  "name": "cs_sub",
+  "t": "cs",
+  "direction": "client->WPS",
+  "note": "Channel subscribe. lcp=last-channel-post ts cursor.",
+  "decoded": {
+    "t": "cs",
+    "s": 1,
+    "cid": "abc123",
+    "lcp": 1700000500000
+  },
+  "wire": {
+    "json": "{\"t\":\"cs\",\"s\":1,\"cid\":\"abc123\",\"lcp\":1700000500000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLlbSUSpWsjLUUUrOTAEKJCYlGxoZAwVzkguAwuYGIGAKJmsBUp8Mkw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cs\",\"s\":1,\"cid\":\"abc123\",\"lcp\":1700000500000}\r"
+  }
+}

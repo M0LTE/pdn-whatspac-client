@@ -1,0 +1,19 @@
+{
+  "name": "uc",
+  "t": "uc",
+  "direction": "WPS->client",
+  "note": "User connected.",
+  "decoded": {
+    "t": "uc",
+    "c": "M0AHN"
+  },
+  "wire": {
+    "json": "{\"t\":\"uc\",\"c\":\"M0AHN\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqTVbSUUoGMnwNHD38lGoBQiUFrA==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"uc\",\"c\":\"M0AHN\"}\r"
+  }
+}

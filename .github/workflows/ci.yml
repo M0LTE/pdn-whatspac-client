@@ -12,24 +12,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Setup .NET
-        uses: actions/setup-dotnet@v4
+      - uses: actions/setup-node@v4
         with:
-          dotnet-version: '10.0.x'
+          node-version: '22'
+          cache: 'npm'
 
-      - name: Restore
-        run: dotnet restore
+      - run: npm ci
 
-      - name: Build
-        run: dotnet build --no-restore -c Release
+      - name: Typecheck
+        run: npm run typecheck
 
       - name: Test
-        run: dotnet test --no-build -c Release --logger "trx;LogFileName=test.trx"
-
-      - name: Upload test results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: '**/*.trx'
-          retention-days: 7
+        run: npm test

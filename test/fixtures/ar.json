@@ -1,0 +1,18 @@
+{
+  "name": "ar",
+  "t": "ar",
+  "direction": "WPS->client",
+  "note": "Avatar response/upload-ack (client clears uploading flag).",
+  "decoded": {
+    "t": "ar"
+  },
+  "wire": {
+    "json": "{\"t\":\"ar\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLFKqBQAQOQMC",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"ar\"}\r"
+  }
+}

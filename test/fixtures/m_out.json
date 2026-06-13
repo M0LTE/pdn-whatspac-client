@@ -1,0 +1,23 @@
+{
+  "name": "m_out",
+  "t": "m",
+  "direction": "client->WPS",
+  "note": "DM. ts=epoch SECONDS; _id='${epochMs}-${fc}'. optional r=reply-to.",
+  "decoded": {
+    "t": "m",
+    "fc": "M0LTE",
+    "tc": "M0AHN",
+    "m": "Hi Kevin",
+    "ts": 1700000000,
+    "_id": "1700000000123-M0LTE"
+  },
+  "wire": {
+    "json": "{\"t\":\"m\",\"fc\":\"M0LTE\",\"tc\":\"M0AHN\",\"m\":\"Hi Kevin\",\"ts\":1700000000,\"_id\":\"1700000000123-M0LTE\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKVdJRSksGMnwNfEJcgZwSCMfRww/IyQWyPTIVvFPLMvNAcsVKVobmBlCgoxSfmQJUgBAxNDLWhZhTCwBG9RaX",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"m\",\"fc\":\"M0LTE\",\"tc\":\"M0AHN\",\"m\":\"Hi Kevin\",\"ts\":1700000000,\"_id\":\"1700000000123-M0LTE\"}\r"
+  }
+}

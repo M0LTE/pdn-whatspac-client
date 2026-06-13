@@ -1,0 +1,22 @@
+{
+  "name": "cpem_out",
+  "t": "cpem",
+  "direction": "client->WPS",
+  "note": "Channel-post emoji. a=1 add/0 remove.",
+  "decoded": {
+    "t": "cpem",
+    "a": 1,
+    "ts": 1700000600000,
+    "cid": "abc123",
+    "e": "1f44d"
+  },
+  "wire": {
+    "json": "{\"t\":\"cpem\",\"a\":1,\"ts\":1700000600000,\"cid\":\"abc123\",\"e\":\"1f44d\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLkjNVdJRSlSyMtRRKikGUuYGIGAGJnWUkjNTgKoSk5INjYyB6lKBHMM0E5MUpVoABmUPrw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cpem\",\"a\":1,\"ts\":1700000600000,\"cid\":\"abc123\",\"e\":\"1f44d\"}\r"
+  }
+}

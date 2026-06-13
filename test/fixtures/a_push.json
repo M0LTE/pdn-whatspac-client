@@ -1,0 +1,21 @@
+{
+  "name": "a_push",
+  "t": "a",
+  "direction": "WPS->client",
+  "note": "Avatar push for callsign c. Updates hams.a/ats; unknown callsign auto-fires a 'he' enquiry.",
+  "decoded": {
+    "t": "a",
+    "c": "M0AHN",
+    "a": "<base64 jpeg>",
+    "ts": 1700000600000
+  },
+  "wire": {
+    "json": "{\"t\":\"a\",\"c\":\"M0AHN\",\"a\":\"<base64 jpeg>\",\"ts\":1700000600000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKVNJRSgbSvgaOHn5AdiKQbZOUWJxqZqKQVZCabgcUKylWsjI0NwABMzBZCwDG+g7Y",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"a\",\"c\":\"M0AHN\",\"a\":\"<base64 jpeg>\",\"ts\":1700000600000}\r"
+  }
+}

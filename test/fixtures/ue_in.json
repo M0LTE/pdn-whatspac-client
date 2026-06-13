@@ -1,0 +1,22 @@
+{
+  "name": "ue_in",
+  "t": "ue",
+  "direction": "WPS->client",
+  "note": "User-enquiry reply. r=found?; n=name; ls=lastSeen.",
+  "decoded": {
+    "t": "ue",
+    "tc": "G4OTJ",
+    "r": true,
+    "n": "Lee",
+    "ls": 1699995000
+  },
+  "wire": {
+    "json": "{\"t\":\"ue\",\"tc\":\"G4OTJ\",\"r\":true,\"n\":\"Lee\",\"ls\":1699995000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqTVXSUSpJBrLcTfxDvICcIiWrkqLSVB2lPKCgTypIPqdYycrQzBIITA0MDGoBxnUPHQ==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"ue\",\"tc\":\"G4OTJ\",\"r\":true,\"n\":\"Lee\",\"ls\":1699995000}\r"
+  }
+}

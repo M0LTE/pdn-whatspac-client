@@ -1,0 +1,19 @@
+{
+  "name": "ud",
+  "t": "ud",
+  "direction": "WPS->client",
+  "note": "User disconnected.",
+  "decoded": {
+    "t": "ud",
+    "c": "M0AHN"
+  },
+  "wire": {
+    "json": "{\"t\":\"ud\",\"c\":\"M0AHN\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqTVHSUUoGMnwNHD38lGoBQjQFrQ==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"ud\",\"c\":\"M0AHN\"}\r"
+  }
+}

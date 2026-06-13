@@ -1,0 +1,26 @@
+{
+  "name": "u",
+  "t": "u",
+  "direction": "WPS->client",
+  "note": "User object(s). tc=callsign(pk in users), n=name, ls=lastSeen, us=status(0/1/2).",
+  "decoded": {
+    "t": "u",
+    "u": [
+      {
+        "tc": "G4OTJ",
+        "n": "Lee",
+        "ls": 1699995000,
+        "us": 2
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"u\",\"u\":[{\"tc\":\"G4OTJ\",\"n\":\"Lee\",\"ls\":1699995000,\"us\":2}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqVdIBYqvoaqWSZCDX3cQ/xAsolAdk+6SmAlk5xUpWhmaWQGBqYGAAVAzkG9XG1gIABS4QQw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"u\",\"u\":[{\"tc\":\"G4OTJ\",\"n\":\"Lee\",\"ls\":1699995000,\"us\":2}]}\r"
+  }
+}

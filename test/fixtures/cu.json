@@ -1,0 +1,20 @@
+{
+  "name": "cu",
+  "t": "cu",
+  "direction": "client->WPS",
+  "note": "Channel unpause/catch-up. Either {cid,lts} (gap-fill from lts) or {cid,pc}.",
+  "decoded": {
+    "t": "cu",
+    "cid": "abc123",
+    "lts": 1700000500000
+  },
+  "wire": {
+    "json": "{\"t\":\"cu\",\"cid\":\"abc123\",\"lts\":1700000500000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLlXSUUrOTAEyE5OSDY2MgdyckmIlK0NzAxAwBZO1ABGfC1s=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cu\",\"cid\":\"abc123\",\"lts\":1700000500000}\r"
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "medb",
+  "t": "medb",
+  "direction": "WPS->client",
+  "note": "DM edit batch.",
+  "decoded": {
+    "t": "medb",
+    "med": [
+      {
+        "_id": "1700000000123-M0LTE",
+        "m": "edited",
+        "edts": 1700000200000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"medb\",\"med\":[{\"_id\":\"1700000000123-M0LTE\",\"m\":\"edited\",\"edts\":1700000200000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKTU1JUtIBUUpW0dVK8ZlAWsnQ3AAKDI2MdX0NfEJcQWqAMqkpmSVApTpARkmxkhVUoRGYrI2tBQCvNBXw",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"medb\",\"med\":[{\"_id\":\"1700000000123-M0LTE\",\"m\":\"edited\",\"edts\":1700000200000}]}\r"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "mr",
+  "t": "mr",
+  "direction": "WPS->client",
+  "note": "DM delivery receipt -> ms:1.",
+  "decoded": {
+    "t": "mr",
+    "_id": "1700000000123-M0LTE"
+  },
+  "wire": {
+    "json": "{\"t\":\"mr\",\"_id\":\"1700000000123-M0LTE\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKLVLSUYrPTAEyDc0NoMDQyFjX18AnxFWpFgC4qwk1",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"mr\",\"_id\":\"1700000000123-M0LTE\"}\r"
+  }
+}

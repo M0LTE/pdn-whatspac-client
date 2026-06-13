@@ -1,0 +1,22 @@
+{
+  "name": "he_out",
+  "t": "he",
+  "direction": "client->WPS",
+  "note": "Ham name enquiry (array of callsigns).",
+  "decoded": {
+    "t": "he",
+    "h": [
+      "M0AHN",
+      "G4OTJ"
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"he\",\"h\":[\"M0AHN\",\"G4OTJ\"]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKSFXSUcpQsopW8jVw9PADctxN/EO8lGJrAYZmCDY=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"he\",\"h\":[\"M0AHN\",\"G4OTJ\"]}\r"
+  }
+}

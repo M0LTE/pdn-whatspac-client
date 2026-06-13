@@ -1,0 +1,35 @@
+{
+  "name": "whatspacd",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Persistent WhatsPac client daemon — holds the WPS link, persists state, and presents it through two heads (web UI + RF terminal). Runs standalone against pdn / XRouter / BPQ, or as a pdn app.",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5"
+  },
+  "bin": {
+    "whatspacd": "./dist/main.js"
+  },
+  "scripts": {
+    "dev": "tsx watch src/main.ts",
+    "start": "node dist/main.js",
+    "typecheck": "tsc --noEmit",
+    "build": "node scripts/build.mjs",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@hono/node-server": "^1",
+    "hono": "^4",
+    "pako": "^2"
+  },
+  "devDependencies": {
+    "@types/node": "^22",
+    "@types/pako": "^2",
+    "esbuild": "^0.24",
+    "tsx": "^4",
+    "typescript": "^5",
+    "vitest": "^2"
+  }
+}

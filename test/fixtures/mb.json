@@ -1,0 +1,38 @@
+{
+  "name": "mb",
+  "t": "mb",
+  "direction": "WPS->client",
+  "note": "DM backfill batch. md.mc=downloaded, md.mt=total.",
+  "decoded": {
+    "t": "mb",
+    "md": {
+      "mc": 2,
+      "mt": 2
+    },
+    "m": [
+      {
+        "fc": "M0AHN",
+        "tc": "M0LTE",
+        "m": "earlier",
+        "ts": 1699999000,
+        "_id": "1699999000000-M0AHN"
+      },
+      {
+        "fc": "M0LTE",
+        "tc": "M0AHN",
+        "m": "reply",
+        "ts": 1699999100,
+        "_id": "1699999100000-M0LTE"
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"mb\",\"md\":{\"mc\":2,\"mt\":2},\"m\":[{\"fc\":\"M0AHN\",\"tc\":\"M0LTE\",\"m\":\"earlier\",\"ts\":1699999000,\"_id\":\"1699999000000-M0AHN\"},{\"fc\":\"M0LTE\",\"tc\":\"M0AHN\",\"m\":\"reply\",\"ts\":1699999100,\"_id\":\"1699999100000-M0LTE\"}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKTVLSUcpNUbKqVspNVrIyAnKAwka1QFrJKrpaKQ0oqORr4OjhB1RXAuH4hLgqgeWVUhOLcjJTi0BSxUpWhmaWIGBgYKCjFJ8JNFMJIQIEuhBjanXgpkIMKkG2AmRqUWpBTiWqmYYYZhrCzAQZUhtbCwCL5TRD",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "compressed",
+    "frame_string": "ÃeJyrVipRslLKTVLSUcpNUbKqVspNVrIyAnKAwka1QFrJKrpaKQ0oqORr4OjhB1RXAuH4hLgqgeWVUhOLcjJTi0BSxUpWhmaWIGBgYKCjFJ8JNFMJIQIEuhBjanXgpkIMKkG2AmRqUWpBTiWqmYYYZhrCzAQZUhtbCwCL5TRDÃ\r"
+  }
+}

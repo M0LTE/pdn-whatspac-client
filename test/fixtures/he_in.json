@@ -1,0 +1,25 @@
+{
+  "name": "he_in",
+  "t": "he",
+  "direction": "WPS->client",
+  "note": "Ham name reply -> hams table (c->{n,ts}).",
+  "decoded": {
+    "t": "he",
+    "h": [
+      {
+        "c": "M0AHN",
+        "n": "Kevin",
+        "ts": 1699990000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"he\",\"h\":[{\"c\":\"M0AHN\",\"n\":\"Kevin\",\"ts\":1699990000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKSFXSUcpQsoquVkoGcn0NHD38gCJ5QLZ3allmHpBdUqxkZWhmCQQGQFAbWwsAunoPLA==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"he\",\"h\":[{\"c\":\"M0AHN\",\"n\":\"Kevin\",\"ts\":1699990000}]}\r"
+  }
+}

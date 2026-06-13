@@ -1,0 +1,19 @@
+{
+  "name": "a_count",
+  "t": "a",
+  "direction": "WPS->client",
+  "note": "Pending-avatar count (ac).",
+  "decoded": {
+    "t": "a",
+    "ac": 4
+  },
+  "wire": {
+    "json": "{\"t\":\"a\",\"ac\":4}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKVNJRSkxWsjKpBQAjmAQy",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"a\",\"ac\":4}\r"
+  }
+}

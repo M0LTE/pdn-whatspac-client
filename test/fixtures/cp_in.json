@@ -1,0 +1,22 @@
+{
+  "name": "cp_in",
+  "t": "cp",
+  "direction": "WPS->client",
+  "note": "Inbound post; client adds _id='${ts}-${fc}', ps, rs.",
+  "decoded": {
+    "t": "cp",
+    "cid": "abc123",
+    "fc": "M0AHN",
+    "ts": 1700000650000,
+    "p": "Hi all"
+  },
+  "wire": {
+    "json": "{\"t\":\"cp\",\"cid\":\"abc123\",\"fc\":\"M0AHN\",\"ts\":1700000650000,\"p\":\"Hi all\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLlDSUUrOTAEyE5OSDY2Mgdy0ZCDP18DRww/IKSlWsjI0NwABM1MQqaNUAJT2yFRIzMlRqgUAcB8RYw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cp\",\"cid\":\"abc123\",\"fc\":\"M0AHN\",\"ts\":1700000650000,\"p\":\"Hi all\"}\r"
+  }
+}

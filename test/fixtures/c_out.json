@@ -1,0 +1,33 @@
+{
+  "name": "c_out",
+  "t": "c",
+  "direction": "client->WPS",
+  "note": "Connect/login object. v=0.92. cc = per-channel delta cursors; omit cc if no subscriptions. lm/le/led = last DM ts/emoji-ts/edit-ts; lhts = last ham-name ts.",
+  "decoded": {
+    "t": "c",
+    "n": "Tom",
+    "c": "M0LTE",
+    "lm": 1700000000,
+    "le": 0,
+    "led": 0,
+    "lhts": 1699999000,
+    "v": 0.92,
+    "cc": [
+      {
+        "cid": "abc123",
+        "lp": 1700000500000,
+        "le": 1700000400000,
+        "led": 1700000300000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"c\",\"n\":\"Tom\",\"c\":\"M0LTE\",\"lm\":1700000000,\"le\":0,\"led\":0,\"lhts\":1699999000,\"v\":0.92,\"cc\":[{\"cid\":\"abc123\",\"lp\":1700000500000,\"le\":1700000400000,\"led\":1700000300000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKVtJRygPSIfm5QFYykOVr4BPiCmTn5CpZGZobQAGQn6pkBaZSIHRGSTFQgZklCIAVlAHF9SyNgKYAjYmuVkrOBKpUSkxKNjQyBplXADfPFMlIqJAJXCgFLmYMJmtjawG8KCh6",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "compressed",
+    "frame_string": "ÃeJyrVipRslJKVtJRygPSIfm5QFYykOVr4BPiCmTn5CpZGZobQAGQn6pkBaZSIHRGSTFQgZklCIAVlAHF9SyNgKYAjYmuVkrOBKpUSkxKNjQyBplXADfPFMlIqJAJXCgFLmYMJmtjawG8KCh6Ã\r"
+  }
+}

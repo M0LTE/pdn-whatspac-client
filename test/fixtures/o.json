@@ -1,0 +1,23 @@
+{
+  "name": "o",
+  "t": "o",
+  "direction": "WPS->client",
+  "note": "Online callsign list.",
+  "decoded": {
+    "t": "o",
+    "o": [
+      "M0AHN",
+      "G4OTJ",
+      "2E0XYZ"
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"o\",\"o\":[\"M0AHN\",\"G4OTJ\",\"2E0XYZ\"]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKV9IBYqtoJV8DRw8/IMfdxD/EC0gbuRpEREYpxdYCAMkNCgE=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"o\",\"o\":[\"M0AHN\",\"G4OTJ\",\"2E0XYZ\"]}\r"
+  }
+}

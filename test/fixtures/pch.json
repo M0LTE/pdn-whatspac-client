@@ -1,0 +1,28 @@
+{
+  "name": "pch",
+  "t": "pch",
+  "direction": "WPS->client",
+  "note": "Channel header/list. cid + cn confirmed; other header fields unknown (capture).",
+  "decoded": {
+    "t": "pch",
+    "ch": [
+      {
+        "cid": "abc123",
+        "cn": "packet-general"
+      },
+      {
+        "cid": "def456",
+        "cn": "ask-devs"
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"pch\",\"ch\":[{\"cid\":\"abc123\",\"cn\":\"packet-general\"},{\"cid\":\"def456\",\"cn\":\"ask-devs\"}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqSM5Q0lECElbR1UrJmSlAocSkZEMjY5BoHkhBYnJ2aoluempealFijlKtDkxZSmqaiakZTFlicbZuSmpZsVJtbC0AsrQbQA==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"pch\",\"ch\":[{\"cid\":\"abc123\",\"cn\":\"packet-general\"},{\"cid\":\"def456\",\"cn\":\"ask-devs\"}]}\r"
+  }
+}

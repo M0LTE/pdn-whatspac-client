@@ -1,5 +1,0 @@
-<Project Sdk="Microsoft.NET.Sdk">
-
-  <!-- TargetFramework / Nullable / ImplicitUsings come from Directory.Build.props. -->
-
-</Project>

@@ -1,0 +1,19 @@
+{
+  "name": "a_upload",
+  "t": "a",
+  "direction": "client->WPS",
+  "note": "WhatsPic upload. Image is a 40x40 JPEG via imageFileResizer, base64-encoded; NO chunking.",
+  "decoded": {
+    "t": "a",
+    "a": "<base64 of 40x40 JPEG, quality 100>"
+  },
+  "wire": {
+    "json": "{\"t\":\"a\",\"a\":\"<base64 of 40x40 JPEG, quality 100>\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKVNIBYislm6TE4lQzE4X8NAUTgwoTAwWvAFd3HYXC0sSczJJKBUMDAzulWgBgQQ3/",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"a\",\"a\":\"<base64 of 40x40 JPEG, quality 100>\"}\r"
+  }
+}

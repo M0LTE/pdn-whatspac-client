@@ -1,0 +1,33 @@
+{
+  "name": "cpemb",
+  "t": "cpemb",
+  "direction": "WPS->client",
+  "note": "Channel-post emoji batch.",
+  "decoded": {
+    "t": "cpemb",
+    "cid": "abc123",
+    "e": [
+      {
+        "ts": 1700000600000,
+        "e": [
+          {
+            "e": "1f44d",
+            "c": [
+              "M0LTE"
+            ]
+          }
+        ],
+        "ets": 1700000700000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"cpemb\",\"cid\":\"abc123\",\"e\":[{\"ts\":1700000600000,\"e\":[{\"e\":\"1f44d\",\"c\":[\"M0LTE\"]}],\"ets\":1700000700000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLkjNTVLSUUrOTAHyEpOSDY2MgdxUJavoaqWSYiUrQ3MDEDADkzAJIKlkmGZikgLSCRRR8jXwCXFViq2NBapA0gUha2NrAROEG9s=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cpemb\",\"cid\":\"abc123\",\"e\":[{\"ts\":1700000600000,\"e\":[{\"e\":\"1f44d\",\"c\":[\"M0LTE\"]}],\"ets\":1700000700000}]}\r"
+  }
+}

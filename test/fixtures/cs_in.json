@@ -1,0 +1,21 @@
+{
+  "name": "cs_in",
+  "t": "cs",
+  "direction": "WPS->client",
+  "note": "Channel subscribe reply. pc=available post count.",
+  "decoded": {
+    "t": "cs",
+    "s": 1,
+    "cid": "abc123",
+    "pc": 12
+  },
+  "wire": {
+    "json": "{\"t\":\"cs\",\"s\":1,\"cid\":\"abc123\",\"pc\":12}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLlbSUSpWsjLUUUrOTAEKJCYlGxoZAwULkoGiRrUAypcKDQ==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cs\",\"s\":1,\"cid\":\"abc123\",\"pc\":12}\r"
+  }
+}

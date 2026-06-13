@@ -1,0 +1,20 @@
+{
+  "name": "cpr",
+  "t": "cpr",
+  "direction": "WPS->client",
+  "note": "Channel-post delivery receipt -> ps:1 (+dts).",
+  "decoded": {
+    "t": "cpr",
+    "ts": 1700000600000,
+    "dts": 1700000605000
+  },
+  "wire": {
+    "json": "{\"t\":\"cpr\",\"ts\":1700000600000,\"dts\":1700000605000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLihS0lEqKVayMjQ3AAEzMKmjlIIiZgokawE/Vwv7",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cpr\",\"ts\":1700000600000,\"dts\":1700000605000}\r"
+  }
+}

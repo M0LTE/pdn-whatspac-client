@@ -1,0 +1,26 @@
+{
+  "name": "memb",
+  "t": "memb",
+  "direction": "WPS->client",
+  "note": "DM emoji batch.",
+  "decoded": {
+    "t": "memb",
+    "mem": [
+      {
+        "a": 1,
+        "_id": "1700000000123-M0LTE",
+        "e": "1f44d",
+        "ets": 1700000300000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"memb\",\"mem\":[{\"a\":1,\"_id\":\"1700000000123-M0LTE\",\"e\":\"1f44d\",\"ets\":1700000300000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKTc1NUtIBUUpW0dVKiUpWhjpK8ZkpQClDcwMoMDQy1vU18AlxBapMBcmkmZikgNglxUD1EGXGYLI2thYA5QgVxw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"memb\",\"mem\":[{\"a\":1,\"_id\":\"1700000000123-M0LTE\",\"e\":\"1f44d\",\"ets\":1700000300000}]}\r"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "name": "ue_out",
+  "t": "ue",
+  "direction": "client->WPS",
+  "note": "User enquiry.",
+  "decoded": {
+    "t": "ue",
+    "c": "G4OTJ"
+  },
+  "wire": {
+    "json": "{\"t\":\"ue\",\"c\":\"G4OTJ\"}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslIqTVXSUUoGMtxN/EO8lGoBQpsFwg==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"ue\",\"c\":\"G4OTJ\"}\r"
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "c_in",
+  "t": "c",
+  "direction": "WPS->client",
+  "note": "Connect reply. w=0 returning / 1 new; mc=new message count; pc=new post count; v=SERVER version.",
+  "decoded": {
+    "t": "c",
+    "w": 0,
+    "mc": 3,
+    "pc": 7,
+    "v": 0.92
+  },
+  "wire": {
+    "json": "{\"t\":\"c\",\"w\":0,\"mc\":3,\"pc\":7,\"v\":0.92}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKVtJRKleyMtBRyk1WsjLWUSoAUuY6SmVAMT1Lo1oAtDAJLQ==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"c\",\"w\":0,\"mc\":3,\"pc\":7,\"v\":0.92}\r"
+  }
+}

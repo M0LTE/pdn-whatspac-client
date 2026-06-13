@@ -1,0 +1,26 @@
+{
+  "name": "cpedb",
+  "t": "cpedb",
+  "direction": "WPS->client",
+  "note": "Channel-post edit batch.",
+  "decoded": {
+    "t": "cpedb",
+    "cid": "abc123",
+    "ed": [
+      {
+        "ts": 1700000600000,
+        "p": "edited",
+        "edts": 1700000700000
+      }
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"cpedb\",\"cid\":\"abc123\",\"ed\":[{\"ts\":1700000600000,\"p\":\"edited\",\"edts\":1700000700000}]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLkhNSVLSUUrOTAHyEpOSDY2MgdxUIC+6WqmkWMnK0NwABMzApI5SAVBZakpmCVAFSBmSCghZG1sLAEfdF7M=",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cpedb\",\"cid\":\"abc123\",\"ed\":[{\"ts\":1700000600000,\"p\":\"edited\",\"edts\":1700000700000}]}\r"
+  }
+}

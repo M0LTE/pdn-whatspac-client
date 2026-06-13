@@ -1,0 +1,25 @@
+{
+  "name": "cp_out",
+  "t": "cp",
+  "direction": "client->WPS",
+  "note": "Channel post. ts=epoch-ms; optional rts/rfc=reply-to; at=array of @-mentioned callsigns.",
+  "decoded": {
+    "t": "cp",
+    "cid": "abc123",
+    "fc": "M0LTE",
+    "ts": 1700000600000,
+    "p": "Hello channel",
+    "at": [
+      "M0AHN"
+    ]
+  },
+  "wire": {
+    "json": "{\"t\":\"cp\",\"cid\":\"abc123\",\"fc\":\"M0LTE\",\"ts\":1700000600000,\"p\":\"Hello channel\",\"at\":[\"M0AHN\"]}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslJKLlDSUUrOTAEyE5OSDY2Mgdy0ZCDP18AnxBXIKSlWsjI0NwABMzCpo1QAlPZIzcnJV0jOSMzLS80BKksEGhYN1OTo4acUWwsARNwYHg==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"cp\",\"cid\":\"abc123\",\"fc\":\"M0LTE\",\"ts\":1700000600000,\"p\":\"Hello channel\",\"at\":[\"M0AHN\"]}\r"
+  }
+}

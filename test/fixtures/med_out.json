@@ -1,0 +1,21 @@
+{
+  "name": "med_out",
+  "t": "med",
+  "direction": "client->WPS",
+  "note": "DM edit. edts=edit ts (epoch-ms).",
+  "decoded": {
+    "t": "med",
+    "_id": "1700000000123-M0LTE",
+    "m": "edited text",
+    "edts": 1700000200000
+  },
+  "wire": {
+    "json": "{\"t\":\"med\",\"_id\":\"1700000000123-M0LTE\",\"m\":\"edited text\",\"edts\":1700000200000}",
+    "deflate": "zlib-wrapped (pako default; header 78 9c; level 6; window 15)",
+    "base64_deflate": "eJyrVipRslLKTU1R0lGKz0wBsg3NDaDA0MhY19fAJ8QVKJcLlElNySxJTVEoSa0oAYqkppQUK1lBVRuByVoAFHIUDw==",
+    "marker": "\\u00C3 (0xC3) wrap on both ends",
+    "frame_terminator": "\\r (0x0D)",
+    "encoding_mode": "uncompressed-fallback",
+    "frame_string": "{\"t\":\"med\",\"_id\":\"1700000000123-M0LTE\",\"m\":\"edited text\",\"edts\":1700000200000}\r"
+  }
+}
